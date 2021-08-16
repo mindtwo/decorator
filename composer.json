@@ -1,0 +1,36 @@
+{
+    "name": "mindtwo/decorator",
+    "description": "Decorate data in PHP",
+    "license": "MIT",
+    "type": "package",
+    "authors": [
+        {
+            "name": "mindtwo GmbH",
+            "email": "info@mindtwo.de",
+            "homepage": "https://www.mindtwo.de/",
+            "role": "Developer"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": "^7.4"
+    },
+    "require-dev": {
+        "mockery/mockery": "^1.3",
+        "phpunit/phpunit": "^8.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "mindtwo\\Decorator\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "mindtwo\\Decorator\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
