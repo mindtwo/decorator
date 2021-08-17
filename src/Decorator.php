@@ -2,11 +2,13 @@
 
 namespace mindtwo\Decorator;
 
+use ArrayAccess;
+use ReflectionMethod;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Str;
 use mindtwo\Decorator\Exceptions\DecoratorException;
 
-abstract class Decorator implements \ArrayAccess
+abstract class Decorator implements ArrayAccess
 {
     /**
      * @var array
@@ -83,7 +85,7 @@ abstract class Decorator implements \ArrayAccess
             return false;
         }
 
-        $reflection = new \ReflectionMethod($this, $method);
+        $reflection = new ReflectionMethod($this, $method);
         if (! $reflection->isPublic()) {
             return false;
         }

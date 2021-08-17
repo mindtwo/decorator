@@ -2,6 +2,8 @@
 
 namespace mindtwo\Decorator\Exceptions;
 
-class DecoratorException extends \Exception
+use Exception;
+
+class DecoratorException extends Exception
 {
 }
